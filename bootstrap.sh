@@ -26,7 +26,7 @@ sudo apt-get install -y php7.1 libapache2-mod-php7.1 php7.1-cli php7.1-common ph
 #
 cd /vagrant
 echo "Installing composer"
-sudo ./install-composer.sh
+./install-composer.sh
 
 
 #
