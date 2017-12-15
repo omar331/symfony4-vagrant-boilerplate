@@ -12,6 +12,8 @@ Vagrant.configure("2") do |config|
 
   config.vm.synced_folder ".", "/vagrant", type: "nfs"
 
+  config.ssh.username
+
   config.vm.provider "virtualbox" do |vb|
      # Display the VirtualBox GUI when booting the machine
      vb.gui = false
@@ -20,7 +22,7 @@ Vagrant.configure("2") do |config|
      vb.memory = "2048"
   end
 
-  config.vm.provision "shell", inline: <<-SHELL
+  config.vm.provision "shell", privileged: false, inline: <<-SHELL
     /vagrant/bootstrap.sh
   SHELL
 end

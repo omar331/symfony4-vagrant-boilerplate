@@ -1,2 +1,5 @@
 .vagrant
 .idea
+my-project/
+*.log
+ubuntu-xenial-16.04-cloudimg-console.log
