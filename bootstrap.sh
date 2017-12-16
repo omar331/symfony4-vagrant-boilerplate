@@ -2,12 +2,6 @@
 sudo apt-get update
 
 
-#
-# ---- Instals Apache 2
-#
-echo "Installing Apache 2"
-sudo apt-get install -y apache2
-
 # -
 # ---- Installs PHP 7.1
 #      See https://www.vultr.com/docs/how-to-install-and-configure-php-70-or-php-71-on-ubuntu-16-04
@@ -31,6 +25,7 @@ rm -rf my-project
 # --- Install Composer
 #
 echo "Installing composer"
+COMPOSER_ALLOW_SUPERUSER=1
 ./install-composer.sh
 
 
