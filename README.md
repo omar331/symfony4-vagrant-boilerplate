@@ -16,8 +16,8 @@ a Ubuntu vagrant box.
 Clone repository and create project directory
 
 ```
-git clone git@github.com:omar331/symfony4-vagrant-boilerplate.git **project-name**
-cd **project-name**
+git clone git@github.com:omar331/symfony4-vagrant-boilerplate.git project-name
+cd project-name
 ```
 
 ### Run vagrant
